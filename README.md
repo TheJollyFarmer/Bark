@@ -24,3 +24,4 @@ yarn build
     * This did lead me to imitate your template too closely, resulting in some CSS I would not use under the circumstances described above.
 * I used web components. I am not sure if this is what you intended.
 * I am not sure if this was your intention; however, I filled the cart out with the provided example to illustrate the functionality of the scroll in the cart menu.
+* Added functionality as specified for each device; though I checked other devices, I could only guess how you would like the layout to appear.
