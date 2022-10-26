@@ -1,0 +1,77 @@
+@import "../variables";
+
+.spinner {
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: $shadow;
+  color: $orange;
+  font-size: 1.25em;
+  height: 150px;
+  left: 50%;
+  letter-spacing: 4px;
+  line-height: 150px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 0 10px $orange;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  transition: visibility $transition-in, opacity $transition-in;
+  visibility: hidden;
+  width:  150px;
+
+  &::before {
+    animation: spinner 2s linear infinite;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-right-color: 3px solid $orange;
+    border-top-color: $orange;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &--active {
+    opacity: 1;
+    transition: visibility $transition-out, opacity $transition-out;
+    visibility: visible;
+  }
+
+  &__circle {
+    animation: animate 2s linear infinite;
+    background: transparent;
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    top: calc(50% - 2px);
+    transform-origin: left;
+    width: 50%;
+
+    &::before {
+      background:  $orange;
+      border-radius: 50%;
+      box-shadow: 0 0 20px $orange;
+      content: "";
+      height: 16px;
+      position: absolute;
+      right: -6px;
+      top: -6px;
+      width: 16px;
+    }
+  }
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes animate {
+  0% { transform: rotate(45deg); }
+  100% { transform: rotate(405deg); }
+}

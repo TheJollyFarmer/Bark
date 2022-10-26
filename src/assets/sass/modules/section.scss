@@ -1,0 +1,64 @@
+@import "../variables";
+
+.section {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4em 2em;
+
+  &__left {
+    flex: auto;
+  }
+
+  &__heading {
+    font-size: 1.75em;
+    margin-bottom: 0.75em;
+  }
+
+  &__body {
+    font-size: 0.95em;
+    text-align: center;
+    opacity: 0.4;
+  }
+
+  &--primary {
+    background: $cyan;
+  }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  .section {
+    padding: 2em;
+
+    &__left {
+      flex: 1;
+    }
+
+    &__heading {
+      font-size: 2.5em;
+      margin-bottom: 0.75em;
+    }
+
+    &__body {
+      font-size: 1.05em;
+      width: 65%;
+    }
+  }
+}
+
+@media only screen and (min-height: 380px) and (orientation: landscape) {
+  .section {
+    padding-top: 8em;
+
+    &__heading {
+      font-size: 2em;
+      margin-bottom: 0.75em;
+    }
+
+    &__body {
+      width: 90%;
+    }
+  }
+}

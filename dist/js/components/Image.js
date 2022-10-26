@@ -1,0 +1,2 @@
+export class Image extends HTMLElement{connectedCallback(){const e="icon"===this.getAttribute("type"),t=e?"icons/":"",s=this.getAttribute("name"),n=e?".svg":".png",i=e=>"../../../dist/assets/images/"+t+s+(e??"")+n,g=`The ${s} image`;this.innerHTML=`\n      <figure class="image">\n          <img\n            src="${i()}"\n            alt="${g}">\n      </figure>\n    `,e||(this.getElementsByTagName("img")[0].srcset=i("@2x")+" 2x")}}
+//# sourceMappingURL=Image.js.map

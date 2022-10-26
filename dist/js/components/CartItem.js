@@ -1,0 +1,2 @@
+export class CartItem extends HTMLDivElement{connectedCallback(){const t=this.getAttribute("title"),e=this.getAttribute("image"),n=this.getAttribute("cost");this.innerHTML=`\n      <div class="cart__item">\n        <v-image\n          name="${e}"\n          class="cart__image">\n        </v-image>\n        <div>\n          <p>${t}</p>\n          <p class="cart__cost">£${n}</p>\n          <a\n              href=""\n              class="cart__remove">\n              Remove\n          </a>\n        </div>\n      </div>\n    `}}
+//# sourceMappingURL=CartItem.js.map

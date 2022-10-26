@@ -1,0 +1,2 @@
+.nav{align-items:center;background:transparent;display:flex;justify-content:space-between;left:0;padding:2em 2em 0;width:100%}.nav__image{width:96px}.nav__icon{position:relative;width:28px}.nav__icon:after{bottom:4px;content:"2";font-size:.85em;font-weight:700;left:50%;position:absolute;transform:translateX(-50%)}@media only screen and (min-width:768px) and (orientation:landscape){.nav{padding:3em;position:fixed;top:0}}
+/*# sourceMappingURL=nav.css.map */

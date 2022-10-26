@@ -1,0 +1,13 @@
+@import "../variables";
+
+.button {
+  background-color: $orange;
+  border: none;
+  border-radius: 25px;
+  color: $white;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  padding: 1.2em 1em;
+  text-transform: uppercase;
+}

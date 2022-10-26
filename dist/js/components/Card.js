@@ -1,0 +1,2 @@
+export class Card extends HTMLDivElement{connectedCallback(){this.innerHTML='\n      <v-image\n        name="chicken"\n        class="card__image">\n      </v-image>\n      <div class="card__body">\n        <p class="card__label">Natures Menu Dog Food Can Chicken</p>\n        <p class="card__cost">£22.81</p>\n        <button class="button card__button">\n          Add to Bag\n        </button>\n      </div>\n    '}}
+//# sourceMappingURL=Card.js.map

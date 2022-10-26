@@ -1,0 +1,36 @@
+.nav {
+  align-items: center;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 2em 2em 0;
+  width: 100%;
+
+  &__image {
+    width: 96px;
+  }
+
+  &__icon {
+    position: relative;
+    width: 28px;
+
+    &::after {
+      bottom: 4px;
+      content: "2";
+      font-size: 0.85em;
+      font-weight: bold;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  .nav {
+    padding: 3em;
+    position: fixed;
+    top: 0;
+  }
+}

@@ -1,0 +1,31 @@
+// Brand
+$black: #000000;
+$grey: #EBEBEB;
+$orange: #FF5C00;
+$white: #FFFFFF;
+$cyan: #EBF6F8;
+
+// Colours
+$primary: $orange;
+$background: $white;
+$border: 1px solid $grey;
+$text: $black;
+$link: $text;
+$hover: $white;
+
+// Spacing
+$spacing: 0.75em;
+$spacing-large: 1em;
+$spacing-small: 0.5em;
+$spacing-smallest: 0.25em;
+
+// Transitions
+$transition-in: 0.25s ease-in;
+$transition-out: 0.2s ease-out;
+
+// Shadows
+$shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+// Typography
+$family-sans-serif: "Roboto", "Open Sans", sans-serif;
+$family-primary: $family-sans-serif;
