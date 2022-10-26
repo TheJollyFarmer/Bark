@@ -10,7 +10,7 @@ node_modules/
 .DS_Store
 
 # Build
-/dist
+dist
 
 # Editor directories and files
 .idea
