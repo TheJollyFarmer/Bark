@@ -2,7 +2,6 @@ import {closeCart, openCart} from "./Cart.js";
 
 export class Nav extends HTMLElement {
   connectedCallback() {
-    this.addEventListener("click", openCart);
     this.innerHTML = `
       <nav class="nav">
         <v-image 
@@ -22,6 +21,6 @@ export class Nav extends HTMLElement {
   }
 
   disconnectedCallback() {
-    this.querySelector(".cart__close").removeEventListener("click", closeCart);
+    this.querySelector(".nav__icon").removeEventListener("click", openCart);
   }
 }
