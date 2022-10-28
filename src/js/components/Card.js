@@ -1,4 +1,4 @@
-export class Card extends HTMLDivElement {
+export class Card extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <v-image

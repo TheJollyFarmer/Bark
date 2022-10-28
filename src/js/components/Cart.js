@@ -1,4 +1,4 @@
-export class Cart extends HTMLDivElement {
+export class Cart extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div class="cart__header">
@@ -10,36 +10,31 @@ export class Cart extends HTMLDivElement {
         </v-image>
       </div>
       <div class="cart__list">
-        <div 
-          is="v-cart-item"
+        <v-cart-item 
           title="Natures Menu Dog Food Can Chicken"
           image="chicken"
           cost="22.81">
-        </div>
-        <div 
-          is="v-cart-item"
+        </v-cart-item>
+        <v-cart-item 
           title="Natures Menu Dog Food Can Chicken"
           image="chicken"
           cost="22.81">
-        </div>
-        <div 
-          is="v-cart-item"
+        </v-cart-item>
+        <v-cart-item 
           title="Natures Menu Dog Food Can Chicken"
           image="chicken"
           cost="22.81">
-        </div>
-        <div 
-          is="v-cart-item"
+        </v-cart-item>
+        <v-cart-item 
           title="Natures Menu Dog Food Can Chicken"
           image="chicken"
           cost="22.81">
-        </div>
-        <div 
-          is="v-cart-item"
+        </v-cart-item>
+        <v-cart-item 
           title="Natures Menu Dog Food Can Chicken"
           image="chicken"
           cost="22.81">
-        </div>
+        </v-cart-item>
       </div>
       <div class="cart__footer">
         <p class="cart__subtotal">Subtotal: £22.81</p>

@@ -1,4 +1,4 @@
-export class CartItem extends HTMLDivElement {
+export class CartItem extends HTMLElement {
   connectedCallback() {
     const name = this.getAttribute("title");
     const image = this.getAttribute("image");
